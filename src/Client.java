@@ -11,6 +11,16 @@ public class Client implements Comparable<Client>{
     }
 
     @Override
+    public String toString() {
+        return "Client {" +
+                "Name='" + Name + '\'' +
+                ", Prenom='" + Prenom + '\'' +
+                ", CIN=" + CIN +
+                ", civilization=" + civilization +
+                '}';
+    }
+
+    @Override
     public int compareTo(Client o) {
         return this.Name.compareTo(o.Name);
     }
